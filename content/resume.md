@@ -77,12 +77,11 @@ title: "Experience"
 
             <div class="experience-details" style="margin-top: 10px; font-size: 0.95rem; line-height: 1.6; opacity: 0.9;">
                 <ul style="padding-left: 1.2rem; margin: 0;">
-                    <li>Train, fine-tune, and deploy ML/DL models using <strong>scikit-learn, XGBoost, TensorFlow,</strong> and <strong>PyTorch</strong>; containerized with <strong>Docker</strong> and orchestrated via <strong>AWS SageMaker</strong> and <strong>Airflow</strong>.</li>
-                    <li>Design modeling features and maintain high-quality feature stores for movies/series using <strong>SageMaker</strong> and <strong>Snowflake</strong>.</li>
-                    <li>Leverage <strong>Open-source SLMs</strong> for downstream regression, multi-class classification, and clustering tasks.</li>
-                    <li>Design and deploy interactive <strong>Plotly Dash</strong> applications via <strong>ECR/ECS</strong> to enhance user experience and feature functionality.</li>
-                    <li>Build automated monitoring dashboards and alarms using <strong>Periscope Data</strong>; managed model versioning with <strong>SageMaker Model Registry</strong>.</li>
-                    <li>Partner with business and product teams to define project scopes and design AI solutions aligned with strategic goals.</li>
+                    <li>Develop, train, fine-tune, and deploy machine learning models with scikit-learn, XGBoost, TensorFlow, PyTorch, Docker, SageMaker, and Airflow to automate predictions that support 80% of business decisions and improve users’ decision speed and accuracy</li>
+                    <li>Apply open-source SLMs and LLMs for downstream tasks such as regression, multi-class classification and clustering</li>
+                    <li>Design and deploy interactive Plotly Dash applications using Dash, Docker, Jenkins CI/CD pipeline, ECR, and ECS Fargate to serve real-time ML inference and provide interactive dashboards for stakeholders to explore and act on model predictions</li>
+                    <li>Create performance metrics, monitoring dashboards, reports, and alarms with Dash, and manage model versions with SageMaker Model Registry, reducing model inference downtime by 30% and ensuring robust model performance over time</li>
+                    <li>Partner with business teams and product managers to define project scope and design customized end-to-end machine learning solutions aligned with business needs</li>
                 </ul>
             </div>
         </div>
@@ -101,9 +100,9 @@ title: "Experience"
 
             <div class="experience-details" style="font-size: 0.95rem; line-height: 1.6; opacity: 0.9;">
                 <ul style="padding-left: 1.2rem; margin: 0;">
-                    <li>Design and implement ML solutions using <strong>AWS CloudFormation</strong> for infrastructure as code.</li>
-                    <li>Developed automation pipelines leveraging <strong>AWS Lambda, Step Functions, S3,</strong> and <strong>SNS</strong>.</li>
-                    <li>Trained and deployed models via transfer-learning using <strong>Amazon SageMaker, Comprehend,</strong> and <strong>Rekognition</strong>.</li>
+                    <li>Built proof of concept with AWS CloudFormation and other AWS services to extract key information from large volumes of documents, reducing manual review time by 95%</li>
+                    <li>Developed end-to-end automation pipelines for banking document information extraction using AWS Lambda, Step Functions, S3, SNS, Textract, and DynamoDB, validating the technical solution</li>
+                    <li>Trained and deployed transfer learning and fine-tuned models with SageMaker, Comprehend, and Rekognition, improving named entity recognition to 98% recall for key-value pair extraction</li>
                 </ul>
             </div>
         </div>
@@ -122,10 +121,10 @@ title: "Experience"
 
             <div class="experience-details" style="font-size: 0.95rem; line-height: 1.6; opacity: 0.9;">
                 <ul style="padding-left: 1.2rem; margin: 0;">
-                    <li>Analyze large-scale sales data to uncover patterns and improve key sales metrics in collaboration with product teams.</li>
-                    <li>Optimized data preparation pipelines with <strong>Hive</strong>, significantly reducing runtime.</li>
-                    <li>Designed, trained, and deployed predictive models on the enterprise platform.</li>
-                    <li>Collaborated with <strong>Model Risk Management</strong> to ensure rigorous documentation of model versions, risk assessments, and business impact.</li>
+                    <li>Cleaned, integrated, and analyzed large-scale structured and unstructured sales data (user metadata, task logs, call transcripts) in Hive to support forecasting across multiple regions</li>
+                    <li>Collaborated with product managers to identify and implement new product capabilities, driving growth in leads, opportunities, and successful credit card sales across the funnel</li>
+                    <li>Designed, trained, fine-tuned, and deployed predictive models on the enterprise platform using Python and scikit-learn, improving sales forecast accuracy by 25% and uncovering performance-driven behaviors to enhance sales scorecards</li>
+                    <li>Partnered with the Model Risk Management team to document model versions, assess risk, and quantify business impacts</li>
                 </ul>
             </div>
         </div>
