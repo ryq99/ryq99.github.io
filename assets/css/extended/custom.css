@@ -1,0 +1,225 @@
+/* Global typography inspired by GT Pressura usage */
+:root {
+    --font-pressura-stack: "GT Pressura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body,
+input,
+li,
+p {
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    font-size: 1em;
+    line-height: 1.3;
+    font-weight: 400;
+    font-family: var(--font-pressura-stack);
+    color: var(--primary);
+    letter-spacing: 0.015em;
+}
+
+p,
+li {
+    margin-bottom: 1.5em;
+}
+
+/* Vertical Line */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #ddd; /* Color of the line */
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin-left: -1px;
+}
+
+/* Timeline Container */
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+}
+
+/* Circles on the timeline */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 12px;
+    background-color: #f1f1f1; /* Match background color */
+    border: 2px solid #333; /* Color of circle border */
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Content box */
+.timeline-content {
+    padding: 15px;
+    background-color: #f8f9fa; /* Box background */
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Content box - Updated for theme integration */
+.timeline-content {
+    padding: 15px;
+    /* Use theme background color and add a slight border for depth */
+    background-color: var(--theme);
+    border: 1px solid var(--border);
+    border-width: 2px;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+}
+
+/* Skills Pills */
+.skill-pill {
+    background-color: var(--theme);
+    border: 1px solid var(--border);
+    color: var(--secondary);
+    
+    /* Slightly increased font and padding for a more substantial look */
+    padding: 8px 16px; 
+    font-size: 0.9rem;
+    
+    line-height: 1;
+    border-width: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; /* Increased gap to match the larger pill size */
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.skills-category {
+  margin-bottom: 0.75rem;
+}
+
+.skills-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--secondary);
+  margin-bottom: 0.35rem;
+}
+
+.skill-pill.ai-ml { border-color: #39ff14; }
+.skill-pill.llm   { border-color: #00f5ff; }
+.skill-pill.data  { border-color: #a78bfa; }
+.skill-pill.mlops { border-color: #ff9f1c; }
+.skill-pill.viz   { border-color: #ff4ecd; }
+
+/* Optional: Subtle hover effect to make them feel "web-native" */
+.skill-pill:hover {
+    border-color: var(--tertiary);
+    color: var(--primary);
+}
+
+.compact-date {
+    font-size: 0.85rem;      /* Smaller font */
+    color: var(--secondary); /* Muted gray color from theme */
+    margin-top: -15px;       /* Pulls it UP closer to the title */
+    margin-bottom: 25px;     /* Space before the next section starts */
+    display: block;          /* Ensures it sits on its own line */
+}
+
+.resume-subtitle {
+    display: flex;
+    justify-content: space-between; /* Pushes items to opposite sides */
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin-top: -15px;      /* Pulls it closer to the "Experience" title */
+    margin-bottom: 20px;    /* Space before the horizontal rule or skills */
+    border-bottom: 0px;     /* Keeps it clean */
+}
+
+.author-name {
+    font-weight: 600;
+}
+
+.last-updated {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Mobile Responsive: Stacks them on small screens */
+@media screen and (max-width: 600px) {
+    .resume-subtitle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+/* This targets the specific meta container in PaperMod */
+.post-header .post-meta {
+    display: none !important;
+}
+
+/* If it's appearing as a description or specific author tag */
+.post-description, .post-author {
+    display: none !important;
+}
+
+/* This ensures our CUSTOM subtitle still shows up */
+.resume-subtitle {
+    display: flex !important; /* Force our manual one to stay visible */
+}
+
+/* Layout for the role rows */
+.role-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6px 10px;
+    margin: 0 -10px; /* Offsets padding so text still aligns with header */
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+}
+
+/* Hover Effect: Subtle background and lift */
+.role-row:hover {
+    background-color: var(--code-bg); /* Uses theme's light gray/dark gray */
+    transform: translateX(5px);      /* Slight "nudge" to the right */
+}
+
+.role-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--primary);
+}
+
+.sub-role {
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.role-date {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    transition: color 0.2s;
+}
+
+.role-row:hover .role-date {
+    color: var(--primary); /* Date wakes up on hover */
+}

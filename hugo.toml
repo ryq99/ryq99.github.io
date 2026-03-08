@@ -1,0 +1,52 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Ruichen Yang'
+theme = ["github.com/adityatelange/hugo-PaperMod"]
+
+# --- PaperMod Configuration ---
+[params]
+    env = "production"
+    title = "Ruichen Yang"
+    description = "Software Engineer & Designer"
+    keywords = ["Portfolio", "Resume", "Projects", "Machine Learning", "Data Science"]
+    author = "Ruichen Yang"
+    images = ["papermod-cover.png"] # Optional: Cover image
+
+    # To remove the "Powered by" lines
+    showFullTextinRoot = false # (Optional)
+    hideCopyright = false 
+    hideFooter = false
+
+    # Enables dark mode toggle
+    [params.assets]
+        disableScrollBarStyle = false
+        disableFingerprint = true
+
+    # Enables a top navigation menu
+    [menu]
+        [[menu.main]]
+            name = "Home"
+            url = "/"
+            weight = 1
+        [[menu.main]]
+            name = "Resume"
+            url = "/resume/"
+            weight = 2
+        [[menu.main]]
+            name = "Projects"
+            url = "/projects/"
+            weight = 3
+
+    # Add social links
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/ryq99"
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://linkedin.com/in/ruichenyangdatascientist"
+
+    # Customizing the text
+    [params.footer]
+        hideCopyright = false
+        # This will remove the "Powered by Hugo & PaperMod"
+        disableHugoGeneratorInject = true
