@@ -22,21 +22,6 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
         disableScrollBarStyle = false
         disableFingerprint = true
 
-    # Enables a top navigation menu
-    [menu]
-        [[menu.main]]
-            name = "Home"
-            url = "/"
-            weight = 1
-        [[menu.main]]
-            name = "Resume"
-            url = "/resume/"
-            weight = 2
-        [[menu.main]]
-            name = "Projects"
-            url = "/projects/"
-            weight = 3
-
     # Add social links
     [[params.socialIcons]]
         name = "github"
@@ -50,3 +35,18 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
         hideCopyright = false
         # This will remove the "Powered by Hugo & PaperMod"
         disableHugoGeneratorInject = true
+
+# Enables a top navigation menu
+[menu]
+    #[[menu.main]]
+    #    name = "Home"
+    #    url = "/"
+    #    weight = 1
+    [[menu.main]]
+        name = "Resume"
+        url = "/resume/"
+        weight = 2
+    [[menu.main]]
+        name = "Projects"
+        url = "/projects/"
+        weight = 3
