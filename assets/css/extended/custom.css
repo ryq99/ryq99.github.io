@@ -96,7 +96,7 @@ li {
     
     line-height: 1;
     border-width: 2px;
-    border-radius: 20px;
+    border-radius: 12px;
     border-style: solid;
     display: inline-block;
     font-weight: 500;
@@ -105,7 +105,7 @@ li {
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px; /* Increased gap to match the larger pill size */
+    gap: 8px; /* Increased gap to match the larger pill size */
     margin-top: 15px;
     margin-bottom: 30px;
 }
