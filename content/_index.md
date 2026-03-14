@@ -1,6 +1,6 @@
 ---
 title: "Home"
 draft: false
+aliases:
+  - /resume/
 ---
-
-<meta http-equiv="refresh" content="0; url=/resume/">
