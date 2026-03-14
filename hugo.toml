@@ -45,8 +45,8 @@ theme = ["github.com/adityatelange/hugo-PaperMod"]
     [[menu.main]]
         name = "Resume"
         url = "/resume/"
-        weight = 2
+        weight = 1
     [[menu.main]]
         name = "Projects"
         url = "/projects/"
-        weight = 3
+        weight = 2
