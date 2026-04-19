@@ -15,7 +15,7 @@ draft: false
 
 **Impact:** Achieved <11% error on annual revenue forecasting and reduced movie-level MAPE by ~15% in production.
 
-🔗 [GitHub Repository](https://github.com/username/repo1)
+[↗ Open App](/dhe-demo/)
 
 ---
 

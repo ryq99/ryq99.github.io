@@ -1,0 +1,44 @@
+{{- define "main" }}
+<div class="dhe-page-wrapper">
+  <div id="dhe-app" class="dhe-demo-app">
+
+    {{/* ── Hero title: collapses when results appear ── */}}
+    <div class="dhe-hero" id="dhe-hero">
+      <p class="dhe-hero-label">Movie Lifecycle Revenue Forecasting</p>
+    </div>
+
+    {{/* ── Search bar: outside hero so dropdown is never clipped ── */}}
+    <div class="dhe-search-section">
+      <div class="dhe-search-wrapper" id="dhe-search-wrapper">
+        <div class="dhe-search-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </div>
+        <input
+          id="dhe-search-input"
+          type="text"
+          placeholder="Search a movie title..."
+          autocomplete="off"
+          spellcheck="false"
+          aria-label="Search movies"
+          aria-autocomplete="list"
+          aria-controls="dhe-search-dropdown"
+        >
+        <ul id="dhe-search-dropdown" class="dhe-dropdown" role="listbox" hidden></ul>
+      </div>
+    </div>
+
+    {{/* ── Results (two-column grid) ── */}}
+    <div id="dhe-results" class="dhe-results" hidden>
+      <div class="dhe-card" id="dhe-metadata"></div>
+      <div class="dhe-card" id="dhe-predictions"></div>
+    </div>
+
+  </div>
+</div>
+
+<script defer src="/js/dhe-demo.js"></script>
+{{- end }}
